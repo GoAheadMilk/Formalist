@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Awesome Site</title>
+  <meta name="description" content="A fast, accessible, and SEO-friendly static site." />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/styles.css" as="style">
+  <link rel="stylesheet" href="/styles.css">
+  <meta name="theme-color" content="#0ea5e9">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="My Awesome Site" />
+  <meta property="og:description" content="A fast, accessible, and SEO-friendly static site." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://YOUR-DOMAIN.example/" />
+  <meta property="og:image" content="https://YOUR-DOMAIN.example/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Google Analytics 4 (optional) -->
+  <!-- Replace G-XXXXXXXXXX with your Measurement ID -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container">
+      <h1>My Awesome Site</h1>
+      <nav aria-label="Primary" class="nav">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1" class="container" role="main">
+    <section>
+      <h2>Welcome</h2>
+      <p>This is a minimal, production-ready starter using only HTML, CSS, and JavaScript.</p>
+      <button id="hello-btn">Click me</button>
+      <p id="hello-msg" class="visually-hidden" aria-live="polite"></p>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>Built with accessibility, performance, and SEO in mind. Deployed with GitHub Pages.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <form name="contact" method="post" data-netlify="true">
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" required autocomplete="name" />
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" type="email" name="email" required autocomplete="email" />
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; <span id="year"></span> You. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="/script.js" defer></script>
+</body>
+</html>
