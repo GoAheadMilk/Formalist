@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://goaheadmilk.github.io/Formalist/sitemap.xml
-
+Sitemap: https://goaheadmilk.github.io/Formalist/sitemap_index.xml
